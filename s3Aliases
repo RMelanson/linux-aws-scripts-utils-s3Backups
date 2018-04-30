@@ -1,0 +1,7 @@
+alias as3='clear;alias|grep s3'
+alias bks3='aws s3 sync s3://ec2-s3fs/linux s3://ec2-s3fs-bak/$(date +"%y.%m.%d-%T")'
+alias cp2s3='aws s3 cp --recursive /var/scripts s3://ec2-s3fs/linux/var/scripts'
+alias cps3='aws s3 cp --recursive s3://ec2-s3fs/linux/var/scripts /var'
+alias sync2s3='aws s3 sync /var/scripts s3://ec2-s3fs/linux/var/scripts'
+alias syncs3='aws s3 sync s3://ec2-s3fs/linux/var/scripts /var/scripts'
+alias vs3='vi /var/scripts/utils/backups/s3Aliases
