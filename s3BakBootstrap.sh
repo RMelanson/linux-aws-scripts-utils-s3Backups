@@ -35,6 +35,8 @@ $clone$gitRepo $installDir
 
 # Setup $pkg
 cd $installDir
+# MAKE ALL SHELL SCRIPTS EXECUTABLE TO ROOT ONLY
+find . -name "*.sh" -exec chmod 700 {} \;
 . ./setup.sh
 
 cd $s3BackupCurrDir
