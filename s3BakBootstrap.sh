@@ -13,8 +13,9 @@ yum install git -y
 
 s3BackupCurrDir=$PWD
 
-#Set Cloning Properties
-pkg=devTools
+# SETUP ENVIRONMENT AND PARAMETERS
+. ./env/setEnv.sh
+
 gitRepo="linux-scripts-bootstraps.git"
 installDir="/tmp/scripts/utils/s3Backups"
 if [ -f ~/.ssh/gitHub.key ]; then
