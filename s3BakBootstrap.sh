@@ -16,8 +16,6 @@ s3BackupCurrDir=$PWD
 # SETUP ENVIRONMENT AND PARAMETERS
 . ./env/setEnv.sh
 
-gitRepo="linux-scripts-bootstraps.git"
-installDir="/tmp/scripts/utils/s3Backups"
 if [ -f ~/.ssh/gitHub.key ]; then
    clone="git clone git@github.com:RMelanson/"
 else
