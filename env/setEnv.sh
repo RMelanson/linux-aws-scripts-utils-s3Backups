@@ -5,4 +5,9 @@ pkg s3Backups
 bootstrap="s3BakBootstrap.sh"
 
 gitRepo="linux-scripts-bootstraps.git"
-installDir="/tmp/scripts/utils/$pkg"
+
+#SET UP INSTALLATION DIRECTORY
+pkg=S3_BACKUPS
+scriptType="utils"
+parentDir="/tmp/scripts/$scriptType/"
+installDir="$parentDir/$pkg"
