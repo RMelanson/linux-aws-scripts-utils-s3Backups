@@ -1,6 +1,6 @@
 #!/bin/bash
 bootstrapDir=$PWD
-bootstrap=$bootstrapDir/ZZZZZZZZZZZZZZZZ.sh
+bootstrap=$bootstrapDir/s3BakBootstrap.sh
 
 # Ensure script is running under root
 if [ "$EUID" -ne 0 ]
